@@ -11,8 +11,8 @@ import org.springframework.context.annotation.Import;
 @Import({AppV1Config.class, AppV2Config.class})
 public class AopConfig {
 
-//    @Bean
-//    public LogTraceAspect logTraceAspect(LogTrace logTrace) {
-//        return new LogTraceAspect(logTrace);
-//    }
+    @Bean
+    public LogTraceAspect logTraceAspect(LogTrace logTrace) {
+        return new LogTraceAspect(logTrace);
+    }
 }
